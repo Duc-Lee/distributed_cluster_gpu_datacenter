@@ -234,7 +234,7 @@ Required turning on **per-job DVFS + reschedule**.
 
 ## `joint_nf` (JOINT-NF)
 
-Upon arrival, conduct a grid search $n \in [1 .. N\_{\max}],\ f \in \text{freq\_levels}$; choose **min energy** configuration (or carbon/cost) which **satisfies SLA**.
+Upon arrival, conduct a grid search $n \in \{1,\ldots,N_{\max}\}$, $f \in$ `freq_levels`; choose **min energy** configuration (or carbon/cost) which **satisfies SLA**.
 
 ```bash
 python run_sim_paper.py --algo joint_nf \
